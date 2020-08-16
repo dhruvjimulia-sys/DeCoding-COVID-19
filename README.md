@@ -25,20 +25,20 @@ If a person has 1 neighbour and is infected, the person moves. \
 If a person has 1 neighbour and is not infected, it does not move. \
 If a person has 2 or 3 neighbours, it moves. \
 If a person has 4 neighbours, it does not move. (beacause it cannot). \
-These rules ensure a person moves as far as possible other people, especially if the person is currently infected. \
+These rules ensure a person moves as far as possible other people, especially if the person is currently infected.
 
 ### Recovery
 
 Recovery will be defined according to whether a person is a critical case or not. An infected person has a 5% chance to be a critical case. \
 If a person is critical case, the person recovers in 32 days. \
 If the person is not a critical case, 14 multiplied by a random number between 0 and 2 determines the recovery time. \
-14 days is the average recovery rate for mild cases. Usually, recovery times can take a range of values. Hence the random number system was used. \
+14 days is the average recovery rate for mild cases. Usually, recovery times can take a range of values. Hence the random number system was used.
 
 ### Credits
 
-Although the website and the simulations were largely designed by me, there were some significant contributions by others which I will address here: The idea of a simulation to model COVID-19 was inspired by 3Blue1Brown's great video on simulating an epidemic. Yet, instead of using the typical SIR model to model the virus, I used my own approach using cellular automata. \
-My brother, Jay Jimulia, also helped me add captivating titles and proverbs for every article, meticulously edit the errors in style, layout and formatting.
-Also, my parents played a huge role in giving their unending support and advice in layouts, testing, and uploading the site. \
+Idea of simulation inspired by 3Blue1Brown's great video on simulating an epidemic\
+My brother Jay Jimulia for adding captivating titles, proverbs and meticulous layout, formatting.\
+My parents for layouts, testing, and uploading the site.
 
 ### Sources for real-world data
 
