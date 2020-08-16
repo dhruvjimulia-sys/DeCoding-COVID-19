@@ -4,7 +4,7 @@ Simulations were created using cellular automata, a discrete computational syste
 Cellular automata from *The Nature Of Code* by Daniel Shiffman: https://natureofcode.com/book/chapter-7-cellular-automata/ \
 This website uses p5.js, a JavaScript library for creative coding: https://p5js.org/
 
-##Simulation specifications
+## Simulation specifications
 
 The simulation starts with a grid of 40 rows and 40 columns. Approximately 25% of the cells have people in them. As mentioned earlier, any cell can have an infected person (red), uninfected person (green), or can have no person (black). The cell's neighbours will be defined as the cells on the top, right, bottom, and left of the cell itself.
 
