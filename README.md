@@ -1,4 +1,4 @@
-# DeCoding-COVID-19
+# DeCoding COVID-19
 Website using computer simulations to raise awareness on the importance of social distancing \
 Simulations were created using cellular automata, a discrete computational system
 Cellular automata from *The Nature Of Code* by Daniel Shiffman: https://natureofcode.com/book/chapter-7-cellular-automata/ \
