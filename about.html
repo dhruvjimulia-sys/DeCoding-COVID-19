@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="formatting.css">
+</head>
+<body>
+  <div class="header">
+    <h1>DeCoding COVID-19</h1>
+    <p style="font-size: 30px">A COVID-19 Simulation</p>
+  </div>
+
+  <ul>
+    <li><a class="active" href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">More Simulations       <i class="down"></i></a>
+      <div class="dropdown-content">
+        <a href="violationwoes.html">Violation Woes</a>
+        <a href="hasteiswaste.html">Haste Makes Waste</a>
+        <a href="cluesfromcomparison.html">Clues from Comparing</a>
+      </div>
+    </li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class = "center">
+    <div class = "card">
+      <h2>About</h2>
+      <h3>About me and this website</h3>
+      <p class="bodytext">
+      Hey! I am Dhruv Jimulia and I am 16 years old. I enjoy computer science, especially its applications in
+      creative coding and simulating natural systems.<br>
+      At a time when COVID-19 was spreading like wildfire, nearly the whole world was in lockdown, and government was contemplating
+      whether to continue the lockdown or not, this website was created to visually provide awareness about the importance of social distancing.
+      The use of computer simulations makes complicated yet relevant data easy to understand for anybody.
+      These simulations were created using the <a href="https://p5js.org/">p5.js library</a>, a JavaScript library for creative coding.
+      </p>
+      <h3>Simulation specifications</h3>
+      <p class="bodytext">
+      These are the rules I am using in my simulation to model the behaviour of the virus.</p>
+      <h4>The Basics</h4>
+      <p class="bodytext">
+      The simulation starts with a grid of 40 rows and 40 columns. Approximately 25% of the cells have people in them.
+      As mentioned earlier, any cell can have an infected person (red), uninfected person (green), or can have no person (black).
+      The cell's neighbours will be defined as the cells on the top, right, bottom, and left of the cell itself.
+      Each day is represented by a frame of animation. In computer science, such simulations are known as cellular automata.
+      </p>
+      <h4>Infection</h4>
+      <p class="bodytext">
+      If an unifected person has neighbours which are infected, then the uninfected person has a
+      75% chance to become infected.<br>
+
+      The number 75% is accurate because the COVID-19 is estimated to
+      spread at a rate such that for every person infected, an average of three more people get
+      infected (estimated average R-nought value is three). Since there are four spaces the virus can move to, the transmission
+      rate is effectively 75%.
+      For the MERS, the chance of infection 12.5% since the average R-nought value is estimated to be 0.5.
+      </p>
+      <h4>Movement</h4>
+      <p class="bodytext">
+      <b>If there is no social distancing:</b><br>
+      If a person can move (i.e. the person does not have four neighbouring people), then it has a 50% chance of moving.<br>
+      If a person moves, then it randomly chooses a neighbouring cell where a person is not present and moves there.<br>
+
+      50% is an accurate estimate since (on average) half the family members move out of their homes in the open at any point in time.<br>
+      <b>If there is social distancing:</b><br>
+      If a person has 0 neighbours, it does not move.<br>
+      If a person has 1 neighbour and is infected, the person moves.<br>
+      If a person has 1 neighbour and is not infected, it does not move.<br>
+      If a person has 2 or 3 neighbours, it moves.<br>
+      If a person has 4 neighbours, it does not move. (beacause it cannot).<br>
+      These rules ensure a person moves as far as possible other people, especially if the person
+      is currently infected.
+      </p>
+
+      <h4>Recovery</h4>
+      <p class="bodytext">
+      Recovery will be defined according to whether a person is a critical case or not.
+      An infected person has a 5% chance to be a critical case.<br>
+      If a person is critical case, the person recovers in 32 days.<br>
+      If the person is not a critical case, 14 multiplied by a random number between
+      0 and 2 determines the recovery time.<br>
+      14 days is the average recovery rate for mild cases. Usually, recovery times can take
+      a range of values. Hence the random number system was used.
+      </p>
+
+      <h3>Credits</h3>
+      <p class="bodytext">
+      Although the website and the simulations were largely designed by me, there were some significant contributions by others which
+      I will address here:
+      The idea of a simulation to model COVID-19 was inspired by <a href="https://www.youtube.com/watch?v=gxAaO2rsdIs&t=933s"> 3Blue1Brown's great video</a> on simulating an epidemic</a>. Yet,
+      instead of using the typical SIR model to model the virus, I used my own approach using cellular automata.<br>
+      My brother, Jay Jimulia, also helped me add captivating titles and proverbs for every article, meticulously edit
+      the errors in style, layout and formatting.<br>
+      Also, my parents played a huge role in giving their unending support and advice in layouts, testing, and uploading the
+      site.<br>
+      </p>
+
+      <h3>Sources for real-world data</h3>
+      <p class="bodytext">Recovery data: WHO COVID-19 Report: https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf<br>
+      Estmated R-nought for MERS: "The role of superspreading in Middle East respiratory syndrome coronavirus (MERS-CoV) transmission" by Eurosurveillance (2015)<br>
+      Estimated R-nought for the COVID-19: https://idpjournal.biomedcentral.com/articles/10.1186/s40249-020-00640-3<br>
+      </p>
+    </div>
+  </div>
+
+  <div class = "center">
+    <div class="menu">
+    <h2>All My Simulations</h2>
+    <p class="menutext">
+      <a href="index.html">Why social distance? (Home)</a><br><br>
+      <a href="violationwoes.html">Violation Woes</a><br><br>
+      <a href="hasteiswaste.html">Haste Makes Waste</a><br><br>
+      <a href="cluesfromcomparison.html">Clues from Comparison</a><br><br>
+    </p>
+  </div>
+  </div>
+</body>
+</html>

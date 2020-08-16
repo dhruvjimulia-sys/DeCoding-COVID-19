@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clues from Comparison</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="formatting.css">
+  <script language="javascript" type= "text/javascript" src="p5.js"></script>
+</head>
+
+<body>
+  <body>
+    <div class="header">
+      <h1>DeCoding COVID-19</h1>
+      <p style="font-size: 30px">A COVID-19 Simulation</p>
+    </div>
+
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li class= "active dropdown">
+        <a href="javascript:void(0)" class="dropbtn">More Simulations       <i class="down"></i></a>
+        <div class="dropdown-content">
+          <a href="violationwoes.html">Violation Woes</a>
+          <a href="hasteiswaste.html">Haste Makes Waste</a>
+          <a href="cluesfromcomparison.html">Clues from Comparing</a>
+        </div>
+      </li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <div class = "center">
+      <div class = "card">
+        <h2>Clues from Comparison</h2>
+        <p class="saying">"The other side is greener..."</p>
+        <p class="bodytext">
+        In this article, the behaviour of COVID-19 will be compared with the Middle Eastern Respiratory Syndrome(MERS), a
+        virus first identified in Saudi Arabia in 2012. COVID-19 is a highly transmissable virus with a low mortality rate,
+        but MERS is a lethal virus with low transmission. The simulations below will compare their behaviour without any
+        social distancing.
+
+        <h3>COVID-19 (no social distancing)</h3>
+
+        <iframe id ="s6" src = "sketch-6.html" style="display:block" class = "center"></iframe>
+        <script>
+          if (window.innerHeight > window.innerWidth){
+            if (window.innerWidth < 600){
+              var canvasWidth = (window.innerWidth - 40) - (window.innerWidth) % 20;
+              var canvasHeight = ((window.innerWidth - 40) - (window.innerWidth) % 20) + 70;
+            } else {
+              var canvasWidth = window.innerWidth/2;
+              var canvasHeight = window.innerWidth/2 + 70;
+            }
+          } else if (window.innerHeight < window.innerWidth){
+            if (window.innerWidth < 1000){
+              var canvasWidth = (window.innerWidth/2);
+              var canvasHeight = (window.innerWidth/2) + 70;
+            } else {
+              var canvasWidth = window.innerHeight/2;
+              var canvasHeight = (window.innerHeight/2) + 70;
+            }
+          }
+          document.getElementById("s6").setAttribute('width', canvasWidth);
+          document.getElementById("s6").setAttribute('height', canvasHeight);
+        </script>
+
+        <h3>MERS (no social distancing)</h3>
+        <iframe id ="s2" src = "sketch-2.html" style="display:block" class = "center"></iframe>
+        <script>
+          document.getElementById("s2").setAttribute('width', canvasWidth);
+          document.getElementById("s2").setAttribute('height', canvasHeight);
+        </script>
+
+        <p class="bodytext">
+        Even though MERS might be more life-threatening, as shown above, its low transmission means
+        that much fewer people contract this virus than COVID-19. <b>So COVID-19 can potentially be more
+        widespread and, in turn, more dangerous.</b>
+        </p>
+      </div>
+    </div>
+
+    <div class = "center">
+      <div class="menu">
+      <h2>More simulations</h2>
+      <p class="menutext">
+        <a href="index.html">Why social distance? (Home)</a><br><br>
+        <a href="violationwoes.html">Violation Woes</a><br><br>
+        <a href="hasteiswaste.html">Haste Makes Waste</a><br><br>
+      </p>
+    </div>
+    </div>
+</body>

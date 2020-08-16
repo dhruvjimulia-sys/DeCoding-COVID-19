@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haste Makes Waste</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="formatting.css">
+  <script language="javascript" type= "text/javascript" src="p5.js"></script>
+</head>
+
+<body>
+  <body>
+    <div class="header">
+      <h1>DeCoding COVID-19</h1>
+      <p style="font-size: 30px">A COVID-19 Simulation</p>
+    </div>
+
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li class= "active dropdown">
+        <a href="javascript:void(0)" class="dropbtn">More Simulations       <i class="down"></i></a>
+        <div class="dropdown-content">
+          <a href="violationwoes.html">Violation Woes</a>
+          <a href="hasteiswaste.html">Haste Makes Waste</a>
+          <a href="cluesfromcomparison.html">Clues from Comparing</a>
+        </div>
+      </li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+
+    <div class = "center">
+      <div class = "card">
+        <h2>Haste Makes Waste</h2>
+        <p class="saying">
+        "Early bird catches the worm,<br>
+        but the early worm gets caught."
+        </p>
+        <p class="bodytext">
+        In the <a href="index.html #sd">strict social distancing model</a>, people isolated themselves
+        until no one was infected anymore. However, if lockdowns were lifted before everyone had recovered,
+        this may not be the case. In the model below, lockdowns are lifted automatically once only 4% of the population
+        is infected.
+        <h3>Lockdowns lifted early</h3>
+        <iframe id ="s5" src = "sketch-5.html" style="display:block" class = "center"></iframe>
+        <script>
+          if (window.innerHeight > window.innerWidth){
+            if (window.innerWidth < 600){
+              var canvasWidth = (window.innerWidth - 40) - (window.innerWidth) % 20;
+              var canvasHeight = ((window.innerWidth - 40) - (window.innerWidth) % 20) + 70;
+            } else {
+              var canvasWidth = window.innerWidth/2;
+              var canvasHeight = window.innerWidth/2 + 70;
+            }
+          } else if (window.innerHeight < window.innerWidth){
+            if (window.innerWidth < 1000){
+              var canvasWidth = (window.innerWidth/2);
+              var canvasHeight = (window.innerWidth/2) + 70;
+            } else {
+              var canvasWidth = window.innerHeight/2;
+              var canvasHeight = (window.innerHeight/2) + 70;
+            }
+          }
+          document.getElementById("s5").setAttribute('width', canvasWidth);
+          document.getElementById("s5").setAttribute('height', canvasHeight);
+        </script>
+        <p class="bodytext">
+          As you can see, even if a tiny percentage of the population has contracted the virus while the lockdown is lifted, the situation gradually evolves into a
+          <a href="index.html #nosd">zero-lockdown model</a>. <b>Therefore, social distances must be maintained even after the lockdowns are lifted.</b>
+        <b></b>
+        </p>
+      </div>
+    </div>
+
+    <div class = "center">
+      <div class="menu">
+      <h2>More simulations</h2>
+      <p class="menutext">
+        <a href="index.html">Why social distance? (Home)</a><br><br>
+        <a href="violationwoes.html">Violation Woes</a><br><br>
+        <a href="cluesfromcomparison.html">Clues from Comparison</a><br><br>
+      </p>
+    </div>
+  </div>
+</body>

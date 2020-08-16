@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeCoding COVID-19</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script language="javascript" type= "text/javascript" src="p5.js"></script>
+</head>
+
+<body>
+  <link rel="stylesheet" href="formatting.css">
+  <div class="header">
+    <h1>DeCoding COVID-19</h1>
+    <p style="font-size: 30px">A COVID-19 Simulation</p>
+  </div>
+
+<ul>
+  <li><a href="about.html">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More Simulations       <i class="down"></i></a>
+    <div class="dropdown-content">
+      <a href="violationwoes.html">Violation Woes</a>
+      <a href="hasteiswaste.html">Haste Makes Waste</a>
+      <a href="cluesfromcomparison.html">Clues from Comparing</a>
+    </div>
+  </li>
+  <li><a class="active" href="index.html">Home</a></li>
+</ul>
+
+  <div class = "center">
+    <div class = "card">
+      <h2>Why social distance?: Visually explained</h2>
+      <h4>by Dhruv Jimulia</h4>
+      <h4>12th April 2020</h4>
+      <p class="saying">
+      "Two metres distance,<br>
+      determines your existence."
+    </p>
+      <p class = "bodytext">
+        Right now, the whole world is undergoing a period of social distancing. Despite countless warnings on television and social media to stay at home,
+        we often feel the need to go out of our homes. In such circumstances, we often do not realise the consequences of not following social distancing in the larger context.
+        This article will demonstrate the the importance of social distancing visually via a computer simulation.</p>
+        <h3>The Simulation</h3>
+        <p class = "bodytext">The simulation consists of a grid of "cells", or boxes. These cells represent spaces in which people can reside. Each cell can have three states:<br>
+        1. Green: Uninfected person<br>
+        2. Red: Infected person<br>
+        3. Black: No person present<br>
+        The people in these "cells" interact like in a real-world society. They can move from one cell to another, can transmit the virus if they are close,
+        and can recover from the virus. People can even use social distancing as a precautionary measure, which means that each person tries to isolate himself from others.
+        Real-world transmission rates and average recovery times have been used in this simulation.</p>
+      <div id="nosd">
+      <h3>Without social distancing:</h3>
+        <iframe id ="s1" src = "sketch-1.html" style="display:block"></iframe>
+        <script>
+          if (window.innerHeight > window.innerWidth){
+            if (window.innerWidth < 600){
+              var canvasWidth = (window.innerWidth - 40) - (window.innerWidth) % 20;
+              var canvasHeight = ((window.innerWidth - 40) - (window.innerWidth) % 20) + 70;
+            } else {
+              var canvasWidth = window.innerWidth/2;
+              var canvasHeight = window.innerWidth/2 + 70;
+            }
+          } else if (window.innerHeight < window.innerWidth){
+            if (window.innerWidth < 1000){
+              var canvasWidth = (window.innerWidth/2);
+              var canvasHeight = (window.innerWidth/2) + 70;
+            } else {
+              var canvasWidth = window.innerHeight/2;
+              var canvasHeight = (window.innerHeight/2) + 70;
+            }
+          }
+          document.getElementById("s1").setAttribute('width', canvasWidth);
+          document.getElementById("s1").setAttribute('height', canvasHeight);</script>
+      <p class="notice">If the simulation is not working, please use an Android/Windows device to view it.<br></p>
+      <p class="bodytext">
+
+      It is clear that without social distancing, the virus can be transmitted very quickly, leaving around 60% of the population infected at any point in time.
+      <b>In perspective of the world population, this means 4.7 billion people can be infected at any point in time.
+      This shows how infectious the COVID-19 can be without social distancing.</b>
+      </p>
+    </div>
+    <div id="sd">
+      <h3>With social distancing:</h3>
+      <iframe id ="s3" src = "sketch-3.html" style="display:block" class = "center"></iframe>
+      <script>
+        document.getElementById("s3").setAttribute('width', canvasWidth);
+        document.getElementById("s3").setAttribute('height', canvasHeight);
+      </script>
+      <p class="notice">If the simulation is not working, please use an Android/Windows device to view it.<br></p>
+      <p class = "bodytext">
+        As you can see, implementing lockdowns restricts the spread of the virus to such an extent that eventually, no one is infected.
+        <b>So it is extremely critical that everyone adheres to social distancing measures and moves outside only if absolutely necessary.</b>
+        <br>
+        Although this article is only about social distancing, other safety measures  maintaining hygeine, washing hands with soap, and wearing masks are also vital in
+        in lowering the transmission rate.
+      </p>
+    </div>
+    </div>
+  </div>
+  <div class = "center">
+    <div class="menu">
+    <h2>More simulations</h2>
+    <p class="menutext">
+      <a href="violationwoes.html">Violation Woes</a><br><br>
+      <a href="hasteiswaste.html">Haste Makes Waste</a><br><br>
+      <a href="cluesfromcomparison.html">Clues from Comparison</a><br><br>
+    </p>
+  </div>
+</div>
+</body>
+</html>
