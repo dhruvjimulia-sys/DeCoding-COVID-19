@@ -1,5 +1,6 @@
 # DeCoding COVID-19
 Website using computer simulations to raise awareness on the importance of social distancing \
+URL of website: https://decodingcovid19.netlify.app/
 Simulations were created using cellular automata, a discrete computational system
 Cellular automata from *The Nature Of Code* by Daniel Shiffman: https://natureofcode.com/book/chapter-7-cellular-automata/ \
 This website uses p5.js, a JavaScript library for creative coding: https://p5js.org/
