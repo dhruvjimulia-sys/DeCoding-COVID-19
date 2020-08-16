@@ -44,4 +44,4 @@ Also, my parents played a huge role in giving their unending support and advice 
 
 Recovery data: WHO COVID-19 Report: https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf \
 Estmated R-nought for MERS: "The role of superspreading in Middle East respiratory syndrome coronavirus (MERS-CoV) transmission" by Eurosurveillance (2015) \
-Estimated R-nought for the COVID-19: https://idpjournal.biomedcentral.com/articles/10.1186/s40249-020-00640-3 \
+Estimated R-nought for the COVID-19: https://idpjournal.biomedcentral.com/articles/10.1186/s40249-020-00640-3 
