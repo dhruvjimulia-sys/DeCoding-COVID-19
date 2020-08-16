@@ -4,7 +4,7 @@ Simulations were created using cellular automata, a discrete computational syste
 Cellular automata from *The Nature Of Code* by Daniel Shiffman: https://natureofcode.com/book/chapter-7-cellular-automata/ \
 This website uses p5.js, a JavaScript library for creative coding: https://p5js.org/
 
-### Simulation specifications
+##Simulation specifications
 
 The simulation starts with a grid of 40 rows and 40 columns. Approximately 25% of the cells have people in them. As mentioned earlier, any cell can have an infected person (red), uninfected person (green), or can have no person (black). The cell's neighbours will be defined as the cells on the top, right, bottom, and left of the cell itself.
 
@@ -34,13 +34,13 @@ If a person is critical case, the person recovers in 32 days. \
 If the person is not a critical case, 14 multiplied by a random number between 0 and 2 determines the recovery time. \
 14 days is the average recovery rate for mild cases. Usually, recovery times can take a range of values. Hence the random number system was used.
 
-### Credits
+## Credits
 
 Idea of simulation inspired by 3Blue1Brown's great video on simulating an epidemic\
 My brother Jay Jimulia for adding captivating titles, proverbs and meticulous layout, formatting.\
 My parents for layouts, testing, and uploading the site.
 
-### Sources for real-world data
+## Sources for real-world data
 
 Recovery data: WHO COVID-19 Report: https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf \
 Estmated R-nought for MERS: "The role of superspreading in Middle East respiratory syndrome coronavirus (MERS-CoV) transmission" by Eurosurveillance (2015) \
